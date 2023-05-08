@@ -1,0 +1,21 @@
+/*O BODY é a BASE de todo o SITE, onde posso mudar toda a estrutura do site*/
+
+/*Regras para chamar:
+
+*CLASSES* só são chamadas com PONTOS (div, button, input, h1...)
+
+*TAGS* são chamadas pelo PROPRIO nome exemo: <h1> xpto </h1>
+
+*ID* os IDS só são chamados com # (hashtags) 
+*/
+body {
+    position: relative;
+    width: 100%;
+    background: #010000;
+}
+
+.navbar {
+    color: white;
+    display: flex;
+    justify-content: right;
+}
