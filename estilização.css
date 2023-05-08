@@ -15,7 +15,7 @@ body {
 }
 
 .navbar {
-    color: white;
+    color: rgb(255, 255, 255);
     display: flex;
     justify-content: right;
 }
