@@ -4,18 +4,65 @@
 
 *CLASSES* só são chamadas com PONTOS (div, button, input, h1...)
 
-*TAGS* são chamadas pelo PROPRIO nome exemo: <h1> xpto </h1>
+*TAGS* são chamadas pelo PROPRIO nome exemplo: <h1> xpto </h1>
 
 *ID* os IDS só são chamados com # (hashtags) 
+
+HOOVER 
 */
+
 body {
-    position: relative;
-    width: 100%;
-    background: #010000;
+    margin: 0 ;
+    padding: 0;
+    /* COLOCAR AQUI A FONTE PARA SER PADRAO EM TODO O SITE */
 }
 
-.navbar {
-    color: rgb(255, 255, 255);
+header {
+    height: 100vh;
+    width: 100%;
+    background-image: url(./imagensSite/abertura_oficial.gif);
+    background-size: 100%; 
+    background-position-y: center;
+    /* video posicionado pelo centro  */
+}
+
+nav { 
     display: flex;
-    justify-content: right;
+    width: 100%;
+    background-color: transparent;
+    justify-content: space-between; 
+    position: fixed;
+    z-index: 3;
+} 
+
+.logoSite img {
+    width: 120px;
+    height: 120px;
+    margin-left: 25%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between; 
+    padding: 20px;
+    margin-right: 15%; /* espaço da direita */
+    align-items: center; /* itens alinhados no centro  */
+    width: 20%; /* largura */
+    list-style: none;
+    color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.fundoHome {
+    width: 100%;
+    height: 100vh; /*VH: view height, pega a altura do monitor (ele adapta de acordo com o pc)*/
+    position: absolute;
+    top: 0;
+}
+
+.container { 
+    display: flex; 
+    width: 100%;
+    height: auto;
+    background-color: black;
 }
