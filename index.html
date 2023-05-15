@@ -5,39 +5,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilização.css">
+    <link rel="stylesheet" href="index.css">
     <title>San Junipero</title>
 </head>
 
 <body>
 
-    <header>
+    <div class="containerHome" id="homeSanJunipero">
+        <header>
 
-        <nav>
-            <!-- logo do meu site no canto esquerdo -->
-            <div class="logoSite">
-                <img src="./imagensSite/logo.png" alt="">
-            </div>
+            <nav>
+                <!-- logo do meu site no canto esquerdo -->
+                <div class="logoSite">
+                    <img src="./imagensSite/logo.png" alt="">
+                </div>
 
-            <!-- elementos da minha navbar (header) -->
-            <ul>
-                <li>HOME</li>
-                <li>SOBRE</li>
-                <li>PERSONAGENS</li>
-                <li>INTELIGÊNCIA ARTIFICIAL</li>
-                <li>CADASTRO</li>
-                <li>LOGIN</li>
-            </ul>
-        </nav>
+                <!-- elementos da minha navbar (header) -->
+                <ul class="elementosNavbar" >
+                    <li><a href="">HOME</a> </li>
+                    <li> <a href=""> SOBRE </a> </li> <!-- << a TAG "A" está dentro da li, para o link ser REFERENCIADO!!! -->
+                    <li> <a href="">PERSONAGENS</a></li>
+                    <li> <a href="">INTELIGÊNCIA ARTIFICIAL</a> </li>
+                    <li> <a href="">CADASTRO</a> </li>
+                    <li> <a href="">LOGIN</a> </li>
+                </ul>
+            </nav>
 
-    </header>
+        </header>
 
-    <!-- VIDEO EM LOOP DA ABERTURA DE BLACK MIRROR  -->
-    <div class="fundoHome"></div>
+        <!-- VIDEO EM LOOP DA ABERTURA DE BLACK MIRROR  -->
+        <div class="fundoHome"></div>
+
+    </div>
 
     <!-- inicio do conteudo do meu site  -->
-
-    <div class="container" id="sobreNos">
+    <div class="containerSobre" id="sobreNos">
 
     </div>
 

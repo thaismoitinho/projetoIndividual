@@ -37,17 +37,22 @@ nav {
     margin-left: 25%;
 }
 
-nav ul {
+.elementosNavbar {
     display: flex;
     justify-content: space-between; 
-    padding: 20px;
-    margin: 15%; /* espaço da direita */
+    margin-right: 40px; /* distancia entre o canto direito */
     align-items: center; /* itens alinhados no centro  */
-    width: 100%; /* largura */
+    width: 66%; /* largura entre os elementos */
     list-style: none;
     color: #ffffff;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+/* A CLASSE ABAIXO ESTÁ ESTILIZANDO A TAG "A" QUE ESTÁ CHAMANDO O LINK DA PAGINA SOBRE  */
+.elementosNavbar a {
+    color: white;
+    font-style: normal;
+}
+
 
 .fundoHome {
     width: 100%;
@@ -58,9 +63,17 @@ nav ul {
     background-size: 100%; 
 }
 
-.container { 
+.containerHome {
+    display: flex;
+    width: 100%;
+    height: 700px;
+    background-color: black;
+}
+
+/* ESSA CLASSE ABAIXO É PARA O CONTEUDO SOBRE DA PAGINA, OU SEJA UM NOVO "BLOCO" */
+.containerSobre { 
     display: flex; 
     width: 100%;
-    height: auto;
-    background-color: black;
+    height: 700px;
+    background-color: rgb(180, 80, 247);
 }
