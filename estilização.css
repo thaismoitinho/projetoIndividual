@@ -20,10 +20,6 @@ body {
 header {
     height: 100vh;
     width: 100%;
-    background-image: url(./imagensSite/abertura_oficial.gif);
-    background-size: 100%; 
-    background-position-y: center;
-    /* video posicionado pelo centro  */
 }
 
 nav { 
@@ -45,9 +41,9 @@ nav ul {
     display: flex;
     justify-content: space-between; 
     padding: 20px;
-    margin-right: 15%; /* espaço da direita */
+    margin: 15%; /* espaço da direita */
     align-items: center; /* itens alinhados no centro  */
-    width: 20%; /* largura */
+    width: 100%; /* largura */
     list-style: none;
     color: #ffffff;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -58,6 +54,8 @@ nav ul {
     height: 100vh; /*VH: view height, pega a altura do monitor (ele adapta de acordo com o pc)*/
     position: absolute;
     top: 0;
+    background-image: url(./imagensSite/abertura_oficial.gif);
+    background-size: 100%; 
 }
 
 .container { 
