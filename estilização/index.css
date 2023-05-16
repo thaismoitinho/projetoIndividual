@@ -110,3 +110,11 @@ nav {
     color: #ffffff;
     width: 100%;
 }
+
+.tituloSanJunipero {
+    display: flex;
+    justify-content: center;
+    margin-top: 9%;
+    color: #ffffff;
+    width: 100%;
+}
