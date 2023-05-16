@@ -98,3 +98,15 @@ nav {
     height: 200px;
     background-color: rgb(0, 0, 0);
 }
+
+/* --------------------------------------------------------------------------------------------------------- */
+
+/* iniciando os conteudos da container  */
+
+.fraseRodape {
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+    color: #ffffff;
+    width: 100%;
+}
