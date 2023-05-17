@@ -93,13 +93,13 @@ nav {
     display: flex; 
     width: 100%;
     height: 680px;
-    background-color: rgb(168, 60, 240);
+    background-color: rgb(0, 0, 0);
 }
 
 .rodape {
     display: flex; 
     width: 100%;
-    height: 150px;
+    height: 180px;
     background-color: rgb(0, 0, 0);
     font-size: 13px;
 }
@@ -107,7 +107,7 @@ nav {
 .fraseRodape {
     display: flex;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 90px;
     color: #ffffff;
     width: 100%;
 }
@@ -227,4 +227,18 @@ nav {
     justify-content: right;
     margin-top: 10rem;
     margin-right: 5rem;
+}
+
+.textoIA {
+    display: flex;
+    justify-content: left;
+    color: #ffffff;
+}
+
+.posicionamentoTextoIA {
+    display: flex;
+    width: 100%;
+    margin-top: 15rem;
+    margin-right: 10rem;
+    text-align: justify;
 }
