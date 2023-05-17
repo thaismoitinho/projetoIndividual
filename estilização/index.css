@@ -104,10 +104,6 @@ nav {
     font-size: 13px;
 }
 
-/* --------------------------------------------------------------------------------------------------------- */
-
-/* iniciando os conteudos da container  */
-
 .fraseRodape {
     display: flex;
     justify-content: center;
@@ -115,6 +111,9 @@ nav {
     color: #ffffff;
     width: 100%;
 }
+/* --------------------------------------------------------------------------------------------------------- */
+
+/* estilização sobre san junipero*/
 
 .tituloSanJunipero {
     display: flex;
@@ -128,9 +127,9 @@ nav {
 }
 
 .imgSanJunipero {
-    width: 450px;
+    width: 430px;
     height: 450px;
-    background-image: url(../assets/cidade_sanjunipero.jpg);
+    background-image: url(../assets/vaporwave_gifSanJunipero.gif);
     border-radius: 1rem;
     border-color: #000000;
 
@@ -144,5 +143,31 @@ nav {
     margin-left: 5rem;
 }
 
+.textoSanJunipero {
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+}
 
+.posicionamentoTextoSJ {
+    display: flex;
+    width: 100%;
+    margin-top: 15rem;
+    margin-right: 9rem;
+    text-align: justify;
 
+}
+
+/* --------------------------------------------------------------------------------------------------------- */
+/* estilização do container da yorkie e kelly */
+
+.tituloPersonagens {
+    display: flex;
+    justify-content: center;
+    margin-top: 6%;
+    color: #ffffff;
+    width: 100%;
+    font-family:'Bruno Ace', cursive;
+    font-size: 2.3rem;
+    position: absolute;
+}
