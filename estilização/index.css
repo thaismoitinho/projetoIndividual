@@ -78,21 +78,21 @@ nav {
 .containerSanJunipero { 
     display: flex; 
     width: 100%;
-    height: 700px;
+    height: 680px;
     background-color: rgb(1, 0, 1);
 }
 
 .containerPersonagens {
     display: flex; 
     width: 100%;
-    height: 700px;
-    background-color: rgb(210, 142, 255);
+    height: 680px;
+    background-color: rgb(0, 0, 0);
 }
 
 .containerInteligenciaArtificial {
     display: flex; 
     width: 100%;
-    height: 700px;
+    height: 680px;
     background-color: rgb(168, 60, 240);
 }
 
@@ -118,7 +118,7 @@ nav {
 .tituloSanJunipero {
     display: flex;
     justify-content: center;
-    margin-top: 6%;
+    margin-top: 5%;
     color: #ffffff;
     width: 100%;
     font-family:'Bruno Ace', cursive;
@@ -130,15 +130,13 @@ nav {
     width: 430px;
     height: 450px;
     background-image: url(../assets/vaporwave_gifSanJunipero.gif);
-    border-radius: 1rem;
-    border-color: #000000;
-
+    border-radius: irem;
 }
 
-.posicionamentoImg {
+.posicionamentoImgSJ {
     width: 100%;
     display: flex;
-    justify-content:;
+    justify-content:left;
     margin-top: 10rem;
     margin-left: 5rem;
 }
@@ -153,7 +151,7 @@ nav {
     display: flex;
     width: 100%;
     margin-top: 15rem;
-    margin-right: 9rem;
+    margin-right: 8rem;
     text-align: justify;
 
 }
@@ -164,10 +162,69 @@ nav {
 .tituloPersonagens {
     display: flex;
     justify-content: center;
-    margin-top: 6%;
+    margin-top: 5%;
     color: #ffffff;
     width: 100%;
     font-family:'Bruno Ace', cursive;
     font-size: 2.3rem;
     position: absolute;
+}
+
+.imgPersonagens {
+    width: 440px;
+    height: 450px;
+    background-image: url(../assets/fotocortada.jpg);
+    border-radius: irem;
+}
+
+.posicionamentoImgYK {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    margin-top: 10rem;
+    margin-right: 5rem;
+}
+
+.textoPersonagens {
+    display: flex;
+    justify-content: left;
+    color: #ffffff;
+}
+
+.posicionamentoTextoYK {
+    display: flex;
+    width: 100%;
+    margin-top: 15rem;
+    margin-right: 10rem;
+    text-align: justify;
+}
+
+/* --------------------------------------------------------------------------------------------------------- */
+
+/* conteudo sobre a inteligencia artificial utilizada na serie */
+
+.tituloIA {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    color: #ffffff;
+    width: 100%;
+    font-family:'Bruno Ace', cursive;
+    font-size: 2.3rem;
+    position: absolute;
+}
+
+.imgIA {
+    width: 440px;
+    height: 400px;
+    background-image: url(../assets/tecnologia.gif);
+    border-radius: irem;
+}
+
+.posicionamentoIA {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    margin-top: 10rem;
+    margin-right: 5rem;
 }
