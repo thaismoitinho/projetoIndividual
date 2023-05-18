@@ -32,7 +32,7 @@ nav {
     width: 100%;
     background-color: transparent;
     justify-content: space-between; 
-    position: fixed;
+    position: absolute;
     z-index: 3;
 } 
 
@@ -57,7 +57,7 @@ nav {
 .elementosNavbar a {
     color: white;
     font-style: normal;
-        text-decoration: none;
+    text-decoration: none;
 }
 
 .fundoHome {

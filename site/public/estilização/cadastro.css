@@ -66,5 +66,16 @@ body {
     background-color: #E41076;
     cursor: pointer;
     
-    
+}
+
+.comConta {
+    color: white;
+    margin-top: 20px;
+    font-size: 1.5rem;
+    width: 27rem;
+}
+
+.comConta a {
+    color: #E41076;
+    text-decoration: none;
 }

@@ -69,4 +69,14 @@ body {
 
 }
 
+.semConta {
+    color: white;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.semConta a {
+    color: #E41076;
+    text-decoration: none;
+}
 
