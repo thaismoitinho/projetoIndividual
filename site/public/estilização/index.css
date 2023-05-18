@@ -134,6 +134,7 @@ nav {
     height: 450px;
     background-image: url(../assets/vaporwave_gifSanJunipero.gif);
     border-radius: irem;
+    border-radius: 2rem;
 }
 
 .posicionamentoImgSJ {
@@ -180,6 +181,7 @@ nav {
     height: 450px;
     background-image: url(../assets/fotocortada.jpg);
     border-radius: irem;
+    border-radius: 2rem;
 }
 
 .posicionamentoImgYK {
@@ -226,7 +228,7 @@ nav {
     width: 440px;
     height: 400px;
     background-image: url(../assets/tecnologia.gif);
-    border-radius: irem;
+    border-radius: 2rem;
 }
 
 .posicionamentoIA {
