@@ -29,8 +29,8 @@ body {
 .formulario {
     display: flex;
     flex-direction: column; /* para deixar elementos na coluna */
-    width: 15rem;
-    margin-right: 10rem;
+    width: 20rem;
+    margin-right: 5rem;
 }
 
 .fraseBemVindo {
