@@ -29,9 +29,8 @@ body {
 .formulario {
     display: flex;
     flex-direction: column; /* para deixar elementos na coluna */
-    width: 19rem;
-    margin-right: 5rem;
-    margin-top: 3rem;
+    width: 15rem;
+    margin-right: 10rem;
 }
 
 .fraseBemVindo {
@@ -46,7 +45,7 @@ body {
 .inputs input {
     width: 20vw;
     height: 3vh;
-    border-radius: 15px;
+    border-radius: 19px;
     border-style: none;
     font-size: 20px;
     font-family:'Poppins', sans-serif;;
@@ -59,12 +58,13 @@ body {
     font-family: 'Bruno Ace', cursive; 
     font-size: 1.2rem;
     color: white;
-    width: 19vw;
+    width: 21.3vw;
     height: 6vh;
     margin-top: 10px;
     border-radius: 25px;
     border-style: none;
     background-color: #E41076;
+    cursor: pointer;
     
     
 }

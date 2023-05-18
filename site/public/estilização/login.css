@@ -1,0 +1,72 @@
+/* FONTES UTILIZADAS NO MEU SITE */
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Poppins:wght@300&display=swap');
+
+
+body {
+    margin: 0 ;
+    padding: 0;
+    font-family:'Bruno Ace', cursive;
+   
+
+    /* COLOCAR AQUI A FONTE PARA SER PADRAO EM TODO O SITE */
+}
+
+.containerLogin {
+    display: flex; 
+    background-image: url(../assets/fundo_cadelog.png);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat; /* comando para duplicar as imagens ou conteudos */
+    justify-content: center;
+    align-items: center;
+    color: white;
+    
+   
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column; /* para deixar elementos na coluna */
+    width: 19rem;
+    margin-right: -1.5rem;
+    margin-top: 1rem;
+}
+
+.fraseBemVindo {
+    font-size: 25px;
+}
+
+.inputs {
+    font-size: 18px;
+   
+}
+
+.inputs input {
+    width: 20vw;
+    height: 2.5vh;
+    border-radius: 15px;
+    border-style: none;
+    font-size: 14px;
+    font-family:'Poppins', sans-serif;;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.botaoLogin {
+    font-family: 'Bruno Ace', cursive; 
+    font-size: 1rem;
+    color: white;
+    width: 21.3vw;
+    height: 6vh;
+    margin-top: 7px;
+    border-radius: 25px;
+    border-style: none;
+    background-color: #E41076;
+    cursor: pointer;
+
+}
+
+
