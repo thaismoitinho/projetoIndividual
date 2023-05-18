@@ -1,9 +1,13 @@
+/* FONTES UTILIZADAS NO MEU SITE */
 @import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Poppins:wght@300&display=swap');
+
 
 body {
     margin: 0 ;
     padding: 0;
     font-family:'Bruno Ace', cursive;
+   
 
     /* COLOCAR AQUI A FONTE PARA SER PADRAO EM TODO O SITE */
 }
@@ -18,6 +22,49 @@ body {
     justify-content: center;
     align-items: center;
     color: white;
+    
+   
 }
 
+.formulario {
+    display: flex;
+    flex-direction: column; /* para deixar elementos na coluna */
+    width: 19rem;
+    margin-right: 5rem;
+    margin-top: 3rem;
+}
 
+.fraseBemVindo {
+    font-size: 40px;
+}
+
+.inputs {
+    font-size: 20px;
+   
+}
+
+.inputs input {
+    width: 20vw;
+    height: 3vh;
+    border-radius: 15px;
+    border-style: none;
+    font-size: 20px;
+    font-family:'Poppins', sans-serif;;
+    padding: 8px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+
+.botaoCadastrar {
+    font-family: 'Bruno Ace', cursive; 
+    font-size: 1.2rem;
+    color: white;
+    width: 19vw;
+    height: 6vh;
+    margin-top: 10px;
+    border-radius: 25px;
+    border-style: none;
+    background-color: #E41076;
+    
+    
+}
