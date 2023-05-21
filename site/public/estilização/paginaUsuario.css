@@ -23,9 +23,10 @@ body {
 }
 
 .navbar {
-    background-color: #080014;
+    background-color: #100227;
     width: 100%;
     height: 60px;
+    position: absolute;
 }
 
 .logOut {
@@ -42,4 +43,11 @@ body {
     margin-top: 10px;
     margin-right: 2rem;
     cursor: pointer;
+}
+
+.painel {
+    width: 276px;
+    height: 100vh;
+    background-color: #080014;
+    
 }
