@@ -22,7 +22,14 @@ body {
     color: white;
 }
 
+.logoSite img {
+    width: 69px;
+    height: 60px;
+    margin-left: 2rem;
+}
+
 .navbar {
+    display: flex;
     background-color: #100227;
     width: 100%;
     height: 60px;
@@ -35,6 +42,10 @@ body {
     justify-content: right;
     background-color: transparent;
     border-style: none;
+    color: #d43faf;
+    align-items: center;
+    font-family: 'Bruno Ace', cursive;
+    cursor: pointer;
 }
 
 .imgLogOut {
@@ -47,7 +58,43 @@ body {
 
 .painel {
     width: 276px;
-    height: 100vh;
+    height: 68.7vh;
     background-color: #080014;
-    
+    padding-top: 180px;
 }
+.botoes {
+    color: white;
+    width: 100%;
+    height: 30px;
+    margin-top: 70px;
+}
+
+.botoes button {
+    margin-top: 1.5px;
+    width: 100%;
+    height: 85px;
+    color: white;
+    font-size: 15px;
+    font-family: 'Bruno Ace', cursive;
+}
+
+.conteudoPainel {
+    display: flex;
+}
+
+.dashboard {
+    background-color: #345ABB;
+    border-style: none;
+}
+
+.quiz {
+    background-color: #4804B8;
+    border-style: none;
+}
+
+.kellyYorkie {
+    background-color: #060837;
+    border-style: none;
+}
+
+
