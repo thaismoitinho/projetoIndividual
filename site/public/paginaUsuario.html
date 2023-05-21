@@ -8,10 +8,12 @@
     <link rel="icon" href="../public/assets/logo.png">
     <link rel="stylesheet" href="./estilização/paginaUsuario.css">
     <link rel="icon" href="assets/logo.png">
+    <script src="funcoes.js"></script>
+
     <title>San Junipero | Tela Inicial </title>
 </head>
 
-<body>
+<body onload="validarSessao(),iconUser()">
 
     <!-- Nessa pagina vai contar toda a interatividade do usuario com o site, ou SEJA
     1. Quiz
@@ -22,33 +24,54 @@
 
         <div class="navbar">
 
-        <div class="logoSite">
-            <img src="assets/logo.png" alt="">
-        </div>
+            <div class="logoSite">
+                <img src="assets/logo.png" alt="">
+            </div>
 
-            <button onclick="sair()" class="logOut"> SAIR <a href="index.html">
-            <img class="imgLogOut" src="./assets/icone_Sair-removebg-preview.png"></a> </button>
+            <button onclick="limparSessao()" class="logOut">
+                <img class="imgLogOut" src="./assets/icone_Sair-removebg-preview.png">
+            </button>
         </div>
-        <div class="conteudoPainel" >
+        <div class="conteudoPainel">
             <div class="painel">
-                <div class="botoes" >
-                <button class="dashboard" >DASHBOARD</button> <br>
-                <button class="quiz">QUIZ</button> <br>
-                <button class="kellyYorkie" >KELLY ou YORKIE?</button> <br>
+
+                <div class="hello">
+
+                    <div id="div_mostrarImagem"></div>
+
+                    <h3>Olá, <span id="b_usuario"></span>!</h3>
+                </div>
+
+                <div class="botoes">
+                    <button class="dashboard">DASHBOARD</button> <br>
+                    <button class="quiz">QUIZ</button> <br>
+                    <button class="kellyYorkie">KELLY ou YORKIE?</button> <br>
                 </div>
             </div>
-        <div class="conteudo"></div>
+            <div class="conteudo"></div>
         </div>
-
 
     </div>
 
 </body>
-
 </html>
 
 <script>
-    function sair() {
+    function iconUser() {
+    var idUsuario = sessionStorage.ID_USUARIO;
+    var sorteio = idUsuario % 2 == 0 // a porcentagem se trata do RESTO
+    
+    var mostrarImagem = [
+        `<img src="assets/icon_kelly.jpg" class="icon" width="50px" height="50px">`,
+        `<img src="assets/icon_yorkie.png" class="icon" width="50px" height="50px">`]
 
+    if (sorteio) {
+        div_mostrarImagem.innerHTML = mostrarImagem[0]
     }
+    else {
+        div_mostrarImagem.innerHTML = mostrarImagem[1]
+    }
+    }
+
+    
 </script>

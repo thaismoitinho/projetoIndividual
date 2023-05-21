@@ -9,6 +9,7 @@ body {
     margin: 0 ;
     padding: 0;
     background-color: black;
+    font-family: 'Bruno Ace', cursive;
 }
 
 .containerUsuario {
@@ -58,21 +59,21 @@ body {
 
 .painel {
     width: 276px;
-    height: 68.7vh;
+    height: 80vh;
     background-color: #080014;
-    padding-top: 180px;
+    padding-top: 115.5px;
 }
 .botoes {
     color: white;
     width: 100%;
     height: 30px;
-    margin-top: 70px;
+    margin-top: 50px;
 }
 
 .botoes button {
-    margin-top: 1.5px;
+    margin-top: 0.5px;
     width: 100%;
-    height: 85px;
+    height: 80px;
     color: white;
     font-size: 15px;
     font-family: 'Bruno Ace', cursive;
@@ -97,4 +98,19 @@ body {
     border-style: none;
 }
 
-
+.hello {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 15px;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
+.icon {
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+  }

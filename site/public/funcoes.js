@@ -4,7 +4,7 @@ function validarSessao() {
 
     var email = sessionStorage.EMAIL_USUARIO;
     var nome = sessionStorage.NOME_USUARIO;
-
+    console.log(nome)
     var b_usuario = document.getElementById("b_usuario");
 
     if (email != null && nome != null) {
@@ -13,7 +13,7 @@ function validarSessao() {
 
         // finalizarAguardar();
     } else {
-        window.location = "../login.html";
+        window.location = "login.html";
     }
 }
 
@@ -21,7 +21,7 @@ function limparSessao() {
     // aguardar();
     sessionStorage.clear();
     // finalizarAguardar();
-    window.location = "../login.html";
+    window.location = "login.html";
 }
 
 // carregamento (loading)
