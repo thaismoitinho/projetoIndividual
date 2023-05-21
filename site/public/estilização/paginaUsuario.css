@@ -9,5 +9,37 @@ body {
     margin: 0 ;
     padding: 0;
     background-color: black;
-    
+}
+
+.containerUsuario {
+    background-image: url(../assets/fundoCanva.png);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.navbar {
+    background-color: #080014;
+    width: 100%;
+    height: 60px;
+}
+
+.logOut {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    background-color: transparent;
+    border-style: none;
+}
+
+.imgLogOut {
+    width: 40px;
+    height: 35px;
+    margin-top: 10px;
+    margin-right: 2rem;
+    cursor: pointer;
 }
