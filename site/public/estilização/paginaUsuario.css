@@ -62,6 +62,7 @@ body {
     height: 80vh;
     background-color: #080014;
     padding-top: 115.5px;
+    
 }
 .botoes {
     color: white;
@@ -91,11 +92,15 @@ body {
 .quiz {
     background-color: #4804B8;
     border-style: none;
+    font-family: 'Bruno Ace', cursive;
+
 }
 
 .kellyYorkie {
     background-color: #060837;
     border-style: none;
+    font-family: 'Bruno Ace', cursive;
+
 }
 
 .hello {
@@ -106,6 +111,8 @@ body {
     text-align: center;
     flex-direction: column;
     align-items: center;
+    font-family: 'Bruno Ace', cursive;
+
 }
 .icon {
     display: flex;
