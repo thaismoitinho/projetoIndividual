@@ -22,16 +22,6 @@
 
     <div class="containerUsuario">
 
-        <div class="navbar">
-
-            <div class="logoSite">
-                <img src="assets/logo.png" alt="">
-            </div>
-
-            <button onclick="limparSessao()" class="logOut">
-                <img class="imgLogOut" src="./assets/icone_Sair-removebg-preview.png">
-            </button>
-        </div>
         <div class="conteudoPainel">
             <div class="painel">
 
@@ -43,9 +33,10 @@
                 </div>
 
                 <div class="botoes">
-                    <button class="dashboard">DASHBOARD</button> <br>
-                    <button class="quiz">QUIZ</button> <br>
-                    <button class="kellyYorkie">KELLY ou YORKIE?</button> <br>
+                    <button class="dashboard"> <a href="dashboard.html">DASHBOARD</a></button> <br>
+                    <button class="quiz"> <a href="quiz.html"> QUIZ</a></button> <br>
+                    <button class="kellyYorkie"> <a href="calculo.html">KELLY ou YORKIE?</a></button> <br>
+                    <button onclick="limparSessao()" class="logOut"> SAIR</button>
                 </div>
             </div>
             <div class="conteudo"></div>

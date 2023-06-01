@@ -5,6 +5,7 @@
 /* font-family:'Bruno Ace', cursive;
    font-family:'Poppins', sans-serif; */
 
+
 body {
     margin: 0 ;
     padding: 0;
@@ -13,7 +14,7 @@ body {
 }
 
 .containerUsuario {
-    background-image: url(../assets/fundoCanva.png);
+    background-image: url(../assets/fundoroxo.jpg);
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
@@ -43,7 +44,6 @@ body {
     justify-content: right;
     background-color: transparent;
     border-style: none;
-    color: #d43faf;
     align-items: center;
     font-family: 'Bruno Ace', cursive;
     cursor: pointer;
@@ -58,25 +58,25 @@ body {
 }
 
 .painel {
-    width: 276px;
-    height: 80vh;
-    background-color: #080014;
-    padding-top: 115.5px;
+    width: 260px;
+    height: 89.4vh;
+    background-color: #16032b;
+    padding-top: 60px;
     
 }
 .botoes {
     color: white;
     width: 100%;
-    height: 30px;
+    height: 25px;
     margin-top: 50px;
 }
 
 .botoes button {
     margin-top: 0.5px;
     width: 100%;
-    height: 80px;
+    height: 70px;
     color: white;
-    font-size: 15px;
+    font-size: 16px;
     font-family: 'Bruno Ace', cursive;
 }
 
@@ -85,7 +85,7 @@ body {
 }
 
 .dashboard {
-    background-color: #345ABB;
+    background-color: #6920de;
     border-style: none;
 }
 
@@ -97,12 +97,18 @@ body {
 }
 
 .kellyYorkie {
-    background-color: #060837;
+    background-color: #2d0656;
     border-style: none;
     font-family: 'Bruno Ace', cursive;
 
 }
-
+.logOut {
+    background-color: #1d0348;
+    border-style: none;
+    font-family: 'Bruno Ace', cursive;
+    display: flex;
+    justify-content: center;
+}
 .hello {
     display: flex;
     justify-content: center;

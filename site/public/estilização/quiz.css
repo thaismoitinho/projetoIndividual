@@ -1,0 +1,129 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Poppins:wght@300&display=swap');
+/* font-family:'Bruno Ace', cursive;
+   font-family:'Poppins', sans-serif; */
+
+
+body {
+    margin: 0 ;
+    padding: 0;
+    background-color: black;
+    font-family: 'Bruno Ace', cursive;
+}
+
+.containerUsuario {
+    background-image: url(../assets/fundoroxo.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.logoSite img {
+    width: 69px;
+    height: 60px;
+    margin-left: 2rem;
+}
+
+.navbar {
+    display: flex;
+    background-color: #100227;
+    width: 100%;
+    height: 60px;
+    position: absolute;
+}
+
+.logOut {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    background-color: transparent;
+    border-style: none;
+    align-items: center;
+    font-family: 'Bruno Ace', cursive;
+    cursor: pointer;
+}
+
+.imgLogOut {
+    width: 40px;
+    height: 35px;
+    margin-top: 10px;
+    margin-right: 2rem;
+    cursor: pointer;
+}
+
+.painel {
+    width: 260px;
+    height: 89.4vh;
+    background-color: #16032b;
+    padding-top: 60px;
+    
+}
+.botoes {
+    color: white;
+    width: 100%;
+    height: 25px;
+    margin-top: 50px;
+}
+
+.botoes button {
+    margin-top: 0.5px;
+    width: 100%;
+    height: 70px;
+    color: white;
+    font-size: 16px;
+    font-family: 'Bruno Ace', cursive;
+}
+
+.conteudoPainel {
+    display: flex;
+}
+
+.dashboard {
+    background-color: #6920de;
+    border-style: none;
+}
+
+.quiz {
+    background-color: #4804B8;
+    border-style: none;
+    font-family: 'Bruno Ace', cursive;
+
+}
+
+.kellyYorkie {
+    background-color: #2d0656;
+    border-style: none;
+    font-family: 'Bruno Ace', cursive;
+
+}
+.logOut {
+    background-color: #1d0348;
+    border-style: none;
+    font-family: 'Bruno Ace', cursive;
+    display: flex;
+    justify-content: center;
+}
+.hello {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 15px;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Bruno Ace', cursive;
+
+}
+.icon {
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+  }
