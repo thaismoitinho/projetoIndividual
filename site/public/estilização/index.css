@@ -48,11 +48,11 @@ nav {
     justify-content: space-between; 
     margin-right: 75px; /* distancia entre o canto direito */
     align-items: center; /* itens alinhados no centro  */
-    width: 75%; /* largura entre os elementos */
+    width: 900px; /* largura entre os elementos */
     list-style: none;
     color: #ffffff;
     font-family: 'Bruno Ace', cursive;
-    font-size: 1rem;
+    font-size: 15px;
 }
 /* A CLASSE ABAIXO ESTÁ ESTILIZANDO A TAG "A" QUE ESTÁ CHAMANDO O LINK DA PAGINA SOBRE  */
 .elementosNavbar a {
@@ -110,7 +110,7 @@ nav {
 .fraseRodape {
     display: flex;
     justify-content: center;
-    margin-top: 90px;
+    margin-top: 120px;
     color: #ffffff;
     width: 100%;
 }
@@ -121,27 +121,21 @@ nav {
 .tituloSanJunipero {
     display: flex;
     justify-content: center;
-    margin-top: 5%;
+    margin-top: 6rem;
     color: #ffffff;
     width: 100%;
     font-family:'Bruno Ace', cursive;
-    font-size: 2.3rem;
+    font-size: 35px;
     position: absolute;
 }
 
 .imgSanJunipero {
-    width: 430px;
+    width: 400px;
     height: 450px;
     background-image: url(../assets/vaporwave_gifSanJunipero.gif);
-    border-radius: irem;
-    border-radius: 2rem;
-}
-
-.posicionamentoImgSJ {
-    width: 100%;
     display: flex;
     justify-content:left;
-    margin-top: 10rem;
+    margin-top: 15rem;
     margin-left: 5rem;
 }
 
@@ -150,16 +144,11 @@ nav {
     justify-content: center;
     color: #ffffff;
     font-family: 'Poppins', sans-serif;
-    font-size: 19px;
-}
-
-.posicionamentoTextoSJ {
-    display: flex;
-    width: 100%;
-    margin-top: 11rem;
-    margin-right: 8rem;
+    font-size: 17px;
+    width: 500px;
+    margin-top: 18rem;
+    margin-left: 8rem;
     text-align: justify;
-
 }
 
 /* --------------------------------------------------------------------------------------------------------- */
@@ -168,45 +157,35 @@ nav {
 .tituloPersonagens {
     display: flex;
     justify-content: center;
-    margin-top: 5%;
+    margin-top: 6rem;
     color: #ffffff;
     width: 100%;
     font-family:'Bruno Ace', cursive;
-    font-size: 2.3rem;
+    font-size: 35px;
     position: absolute;
 }
 
 .imgPersonagens {
-    width: 440px;
+    width: 400px;
     height: 450px;
-    background-image: url(../assets/fotocortada.jpg);
-    border-radius: irem;
-    border-radius: 2rem;
-}
-
-.posicionamentoImgYK {
-    width: 100%;
+    background: no-repeat;
+    background-image: url(../assets/fotocortada2.jpg);
     display: flex;
-    justify-content: right;
-    margin-top: 10rem;
-    margin-right: 5rem;
+    justify-content: center;
+    margin-top: 15rem;
+    margin-left: 5rem;
 }
 
 .textoPersonagens {
     display: flex;
-    justify-content: left;
+    justify-content: center;
     color: #ffffff;
     font-family: 'Poppins', sans-serif;
-    font-size: 19px;
-}
-
-.posicionamentoTextoYK {
-    display: flex;
-    width: 100%;
-    margin-top: 15rem;
-    margin-right: 10rem;
+    font-size: 17px;
+    margin-top: 18rem;
+    margin-left: 8rem;
     text-align: justify;
-
+    width: 500px;
 }
 
 /* --------------------------------------------------------------------------------------------------------- */
@@ -216,41 +195,32 @@ nav {
 .tituloIA {
     display: flex;
     justify-content: center;
-    margin-top: 5%;
+    margin-top: 6rem;
     color: #ffffff;
     width: 100%;
     font-family:'Bruno Ace', cursive;
-    font-size: 2.3rem;
+    font-size: 35px;
     position: absolute;
 }
 
 .imgIA {
-    width: 440px;
-    height: 400px;
-    background-image: url(../assets/tecnologia.gif);
-    border-radius: 2rem;
-}
-
-.posicionamentoIA {
-    width: 100%;
-    display: flex;
-    justify-content: right;
-    margin-top: 10rem;
-    margin-right: 5rem;
+    width: 400px;
+    height: 450px;
+    background: no-repeat;
+    background-image: url(../assets/tumblr_b94d99276aace41f4d2f5a7216ac9045_d6c45ca6_540.webp);
+    justify-content: center;
+    margin-top: 15rem;
+    margin-left: 5rem;
 }
 
 .textoIA {
     display: flex;
-    justify-content: left;
+    justify-content: center;
+    width: 500px;
     color: #ffffff;
     font-family: 'Poppins', sans-serif;
-    font-size: 19px;
-}
-
-.posicionamentoTextoIA {
-    display: flex;
-    width: 100%;
-    margin-top: 11rem;
-    margin-right: 10rem;
+    font-size: 17px;
+    margin-top: 18rem;
+    margin-left: 8rem;
     text-align: justify;
 }
