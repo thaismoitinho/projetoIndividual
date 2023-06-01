@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../public/assets/logo.png">
+    <link rel="stylesheet" href="./estilização/calculo.css">
+    <link rel="stylesheet" href="./estilização/paginaUsuario.css">
+    <link rel="icon" href="assets/logo.png">
+    <script src="funcoes.js"></script>
+
+    <title>KELLY ou YORKIE? | San Junipero </title>
+</head>
+
+<body onload="validarSessao(),iconUser()">
+
+    <!-- Nessa pagina vai contar toda a interatividade do usuario com o site, ou SEJA
+    1. Quiz
+    2. Analytics
+    3. Calculo Matematico -->
+
+    <div class="containerUsuario">
+
+        <div class="conteudoPainel">
+            <div class="painel">
+
+                <div class="hello">
+
+                    <div id="div_mostrarImagem"></div>
+
+                    <h3>Olá, <span id="b_usuario"></span>!</h3>
+                </div>
+
+                <div class="botoes">
+                    <button class="dashboard"> <a href="dashboard.html">DASHBOARD</a></button> <br>
+                    <button class="quiz"> <a href="quiz.html"> QUIZ</a></button> <br>
+                    <button class="kellyYorkie"> <a href="calculo.html">KELLY ou YORKIE?</a></button> <br>
+                    <button onclick="limparSessao()" class="logOut"> SAIR</button>
+                </div>
+            </div>
+            <div class="conteudo"></div>
+        </div>
+
+    </div>
+
+</body>
+</html>
+
+<script>
+    function iconUser() {
+    var idUsuario = sessionStorage.ID_USUARIO;
+    var sorteio = idUsuario % 2 == 0 // a porcentagem se trata do RESTO
+    
+    var mostrarImagem = [
+        `<img src="assets/kelly_icon.jpeg" class="icon" width="50px" height="50px">`,
+        `<img src="assets/yorkie_icon.jpeg" class="icon" width="50px" height="50px">`]
+
+    if (sorteio) {
+        div_mostrarImagem.innerHTML = mostrarImagem[0]
+    }
+    else {
+        div_mostrarImagem.innerHTML = mostrarImagem[1]
+    }
+    }
+
+    
+</script>

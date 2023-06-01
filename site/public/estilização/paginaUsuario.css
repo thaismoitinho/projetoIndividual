@@ -88,12 +88,18 @@ body {
     background-color: #6920de;
     border-style: none;
 }
-
+.dashboard a {
+    text-decoration: none;
+    color: white;
+}
 .quiz {
     background-color: #4804B8;
     border-style: none;
     font-family: 'Bruno Ace', cursive;
-
+}
+.quiz a {
+    text-decoration: none;
+    color: white;
 }
 
 .kellyYorkie {
@@ -102,13 +108,18 @@ body {
     font-family: 'Bruno Ace', cursive;
 
 }
+.kellyYorkie a {
+    text-decoration: none;
+    color: white;
+}
 .logOut {
-    background-color: #1d0348;
+    background-color: #18003e;
     border-style: none;
     font-family: 'Bruno Ace', cursive;
     display: flex;
     justify-content: center;
 }
+
 .hello {
     display: flex;
     justify-content: center;
