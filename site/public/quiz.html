@@ -15,7 +15,7 @@
     <title> QUIZ | San Junipero </title>
 </head>
 
-<body onload="validarSessao(),iconUser()">
+<body onload="validarSessao(),iconUser(),mostrarQuiz()">
 
     <!-- Nessa pagina vai contar toda a interatividade do usuario com o site, ou SEJA
     1. Quiz
@@ -43,39 +43,118 @@
             </div>
             <div class="conteudoQuiz">
                 <!-- titulo do quiz -->
-                <h3 class="titulo" >CONHECENDO O UNIVERSO DE SAN JUNIPERO</h3>
+                <h3 id="titulo" class="titulo">CONHECENDO O UNIVERSO DE SAN JUNIPERO</h3>
                 <!-- pergunta do quiz -->
-                <div class="pergunta">MINHA PERGUNTA</div>
-                <!-- botoes com as respostas  -->
-                <div class="opcoes">
-                    <button class="option">QUESTION</button>
-                    <button class="option">QUESTION</button>
-                    <button class="option">QUESTION</button>
-                    <button class="option">QUESTION</button>
+                <div id="pergunta" class="pergunta"></div>
+                <div id="opcoes" class="opcoes">
                 </div>
+                <p id="resultado"></p>
             </div>
         </div>
     </div>
 
 </body>
+
 </html>
 
 <script>
     function iconUser() {
-    var idUsuario = sessionStorage.ID_USUARIO;
-    var sorteio = idUsuario % 2 == 0 // a porcentagem se trata do RESTO
-    
-    var mostrarImagem = [
-        `<img src="assets/kelly_icon.jpeg" class="icon" width="50px" height="50px">`,
-        `<img src="assets/yorkie_icon.jpeg" class="icon" width="50px" height="50px">`]
+        var idUsuario = sessionStorage.ID_USUARIO;
+        var sorteio = idUsuario % 2 == 0 // a porcentagem se trata do RESTO
 
-    if (sorteio) {
-        div_mostrarImagem.innerHTML = mostrarImagem[0]
-    }
-    else {
-        div_mostrarImagem.innerHTML = mostrarImagem[1]
-    }
+        var mostrarImagem = [
+            `<img src="assets/kelly_icon.jpeg" class="icon" width="50px" height="50px">`,
+            `<img src="assets/yorkie_icon.jpeg" class="icon" width="50px" height="50px">`]
+
+        if (sorteio) {
+            div_mostrarImagem.innerHTML = mostrarImagem[0]
+        }
+        else {
+            div_mostrarImagem.innerHTML = mostrarImagem[1]
+        }
     }
 
-    
+    // arrays que armazenam as perguntas
+    var perguntas = [
+        {
+            pergunta: "Qual é o nome da cidade fictícia em que se passa o episódio?",
+            opcoes: ["San Francisco", "San Diego", "San Junipero", "San Martin"],
+            respostaCerta: 2
+        },
+        {
+            pergunta: "Em que ano a história principal do episódio se passa",
+            opcoes: ["1987", "1997", "2007", "1500"],
+            respostaCerta: 0
+        },
+        {
+            pergunta: "Qual é o nome da protagonista do episódio, interpretada por Gugu Mbatha-Raw?",
+            opcoes: ["Kelly", "Yorkie", "Angelina Jolie", "Martha"],
+            respostaCerta: 0
+        },
+        {
+            pergunta: "Qual é o nome do clube noturno que Yorkie frequenta em San Junipero",
+            opcoes: ["Taffy's", "Tucker's", "Tucker's 2", "Taffy's 2"],
+            respostaCerta: 1
+        },
+        {
+            pergunta: "Qual é a verdadeira natureza de San Junipero?",
+            opcoes: [
+                "Uma cidade virtual para onde as pessoas vão depois que morrem",
+                "Uma cidade real em que as pessoas podem viver eternamente",
+                "Uma cidade virtual em que as pessoas podem viver eternamente",
+                "Uma cidade virtual de rave e muita musica eletronica"
+            ],
+            respostaCerta: 2
+        },
+    ]
+
+    var perguntaAtual = 0;
+    var pontuacao = 0;
+
+    // script do funcionamento do QUIZ!!
+    function mostrarQuiz() {
+        var divPergunta = document.getElementById("pergunta");
+        var divOpcoes = document.getElementById("opcoes");
+        var resultado = document.getElementById("resultado");
+
+        // essa div pega o vetor, 
+        // pega a posição da pergunta, ou seja ZERO
+        // (.pergunta) < elemento do vetor a ser exibido
+        // ESSE CAMPO (.pergunta) ESTÁ PEGANDO O ELEMENTO PERGUNTA DENTRO DO ARRAY
+        divPergunta.innerHTML = perguntas[perguntaAtual].pergunta;
+
+        divOpcoes.innerHTML = "";
+
+        // Loop para criar os botões de opção das respostas
+
+        var qtdOpcoes = perguntas[perguntaAtual].opcoes.length;
+
+        for (var i = 0; i < qtdOpcoes; i++) {
+            divOpcoes.innerHTML += "<button class='option' onclick=validarResposta(" + i + ")>" + perguntas[perguntaAtual].opcoes[i] + "</button>";
+        }
+        resultado.innerHTML = "";
+    }
+
+    function validarResposta(opcaoSelecionada) {
+        //   Verificando se a resposta esta certa, ele compara a opção selecionada com a 
+        //   posição da resposta certa do vetor, no qual está declarado no array de questoes
+        if (opcaoSelecionada == perguntas[perguntaAtual].respostaCerta) {
+            pontuacao++;
+        }
+
+        perguntaAtual++; // comando para a pergunta ser trocada
+
+        if (perguntaAtual < perguntas.length) {
+            mostrarQuiz();
+        } else {
+            var divPergunta = document.getElementById("pergunta");
+            var divOpcoes = document.getElementById("opcoes");
+            var resultado = document.getElementById("resultado");
+
+            divPergunta.innerHTML = "";
+            divOpcoes.innerHTML = "";
+            resultado.innerHTML = `Você acertou ${pontuacao} de ${perguntas.length} perguntas`;
+        }
+    }
+
 </script>
