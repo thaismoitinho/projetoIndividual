@@ -9,12 +9,12 @@
     <link rel="stylesheet" href="./estilização/dashboard.css">
     <link rel="stylesheet" href="./estilização/paginaUsuario.css">
     <link rel="icon" href="assets/logo.png">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="funcoes.js"></script>
     <title>Dashboards | San Junipero </title>
 </head>
 
 <body onload="validarSessao(),iconUser()">
-
     <!-- Nessa pagina vai contar toda a interatividade do usuario com o site, ou SEJA
     1. Quiz
     2. Analytics
@@ -39,15 +39,12 @@
                     <button onclick="limparSessao()" class="logOut"> SAIR</button>
                 </div>
             </div>
-            <div class="conteudo"></div>
+            <div class="conteudo">
+                <canvas id="myChart1"></canvas>
+                <canvas id="myChart2"></canvas>
+            </div>
         </div>
     </div>
-
-    <div class="containerGraficos">
-
-
-    </div>
-
 </body>
 
 </html>
@@ -69,5 +66,57 @@
         }
     }
 
+    const ctx = document.getElementById("myChart1");
+
+
+    new Chart(ctx, {
+        type: "bar",
+        data: {
+            labels: ["",
+            ],
+            datasets: [
+                {
+                    label: "Sala de reunião - 12º Andar",
+                    data: [
+                        900, 900, 850, 900, 900, 850, 900, 900, 900, 850, 900, 850, 900,
+                        900, 900, 850, 900, 900, 900, 900, 850, 900, 900, 900,
+                    ],
+                    borderWidth: 1,
+                    backgroundColor: "rgb(255,0,255)",
+                    borderColor: "rgb(255,0,255)",
+                },
+            ],
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true,
+                },
+            },
+        },
+    });
+
+    const ctx2 = document.getElementById("myChart2");
+
+
+new Chart(ctx2, {
+    type: "doughnut",
+    data: {
+        labels: ["",
+        ],
+        datasets: [
+            {
+                label: "Kelly ou Yorkie",
+                data: [
+                    900, 900, 850, 900, 900, 850, 900, 900, 900, 850, 900, 850, 900,
+                    900, 900, 850, 900, 900, 900, 900, 850, 900, 900, 900,
+                ],
+                borderWidth: 1,
+                backgroundColor: "rgb(75,0,130)",
+                borderColor: "rgb(75,0,130)",
+            },
+        ],
+    },
+});
 
 </script>
