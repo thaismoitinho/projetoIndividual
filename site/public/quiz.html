@@ -150,11 +150,54 @@
             var divPergunta = document.getElementById("pergunta");
             var divOpcoes = document.getElementById("opcoes");
             var resultado = document.getElementById("resultado");
+            var totalPontos = 0;
+            totalPontos = pontuacao;
+            console.log(totalPontos);
 
             divPergunta.innerHTML = "";
             divOpcoes.innerHTML = "";
             resultado.innerHTML = `Você acertou ${pontuacao} de ${perguntas.length} perguntas`;
         }
-    }
+    
+     var idUsuario = sessionStorage.ID_USUARIO
+     console.log(idUsuario);
 
+
+        fetch("/usuarios/pontuacao", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                // crie um atributo que recebe o valor recuperado aqui
+                // Agora vá para o arquivo routes/usuario.js
+                pontuacaoServer: totalPontos, 
+                idUsuarioServer: idUsuario
+            })
+        }).then(function (resposta) {
+
+            console.log("resposta: ", resposta);
+
+            if (resposta.ok) {
+                cardErro.style.display = "block";
+
+                mensagem_erro.innerHTML = "Cadastro realizado com sucesso! Redirecionando para tela de Login...";
+
+                setTimeout(() => {
+                    window.location = "login.html";
+                }, "2000")
+
+                limparFormulario();
+                finalizarAguardar();
+            } else {
+                throw ("Houve um erro ao tentar realizar o cadastro!");
+            }
+        }).catch(function (resposta) {
+            console.log(`#ERRO: ${resposta}`);
+            finalizarAguardar();
+        });
+
+        return false;
+    }
+    
 </script>

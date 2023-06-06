@@ -31,8 +31,20 @@ function cadastrar(nome, sobrenome, email, senha) {
     return database.executar(instrucao);
 }
 
+function pontuacao(pontuacao, usuario) {
+    
+    // Insira exatamente a query do banco aqui, lembrando da nomenclatura exata nos valores
+    //  e na ordem de inserção dos dados.
+    var instrucao = `
+        INSERT INTO resposta (pontuacao, fkUsuario) VALUES ('${pontuacao}','${usuario}');
+    `;
+    console.log("Executando a instrução SQL: \n" + instrucao);
+    return database.executar(instrucao);
+}
+
 module.exports = {
     entrar,
     cadastrar,
     listar,
+    pontuacao
 };

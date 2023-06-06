@@ -14,7 +14,7 @@
     <title>Dashboards | San Junipero </title>
 </head>
 
-<body onload="validarSessao(),iconUser()">
+<body onload="validarSessao(),iconUser(),obterDadosGrafico()">
     <!-- Nessa pagina vai contar toda a interatividade do usuario com o site, ou SEJA
     1. Quiz
     2. Analytics
@@ -39,12 +39,14 @@
                     <button onclick="limparSessao()" class="logOut"> SAIR</button>
                 </div>
             </div>
-            <div class="conteudo">
-                <canvas id="myChart1"></canvas>
-                <canvas id="myChart2"></canvas>
+            <div class="conteudoDashboard">
+                <canvas class="chart1" id="myChart1"></canvas>
             </div>
         </div>
     </div>
+
+
+
 </body>
 
 </html>
@@ -66,57 +68,91 @@
         }
     }
 
-    const ctx = document.getElementById("myChart1");
+    function obterDadosGrafico(idAquario) {
 
 
-    new Chart(ctx, {
-        type: "bar",
-        data: {
-            labels: ["",
-            ],
-            datasets: [
-                {
-                    label: "Sala de reunião - 12º Andar",
-                    data: [
-                        900, 900, 850, 900, 900, 850, 900, 900, 900, 850, 900, 850, 900,
-                        900, 900, 850, 900, 900, 900, 900, 850, 900, 900, 900,
-                    ],
-                    borderWidth: 1,
-                    backgroundColor: "rgb(255,0,255)",
-                    borderColor: "rgb(255,0,255)",
-                },
-            ],
-        },
-        options: {
-            scales: {
-                y: {
-                    beginAtZero: true,
-                },
+
+        fetch(`/medidas/ultimas/${idAquario}`, { cache: 'no-store' }).then(function (response) {
+            if (response.ok) {
+                response.json().then(function (resposta) {
+                    console.log(`Dados recebidos: ${JSON.stringify(resposta)}`);
+
+                    plotarGrafico(resposta, idAquario);
+
+                });
+            } else {
+                console.error('Nenhum dado encontrado ou erro na API');
+            }
+        })
+            .catch(function (error) {
+                console.error(`Erro na obtenção dos dados p/ gráfico: ${error.message}`);
+            });
+    }
+
+
+
+    function plotarGrafico(resposta, idAquario) {
+
+        console.log('iniciando plotagem do gráfico...');
+
+
+
+        // Criando estrutura para plotar gráfico - labels
+        let labels = [];
+
+        // Criando estrutura para plotar gráfico - dados
+        let dados = {
+            labels: labels,
+            datasets: [{
+                label: 'RESPOSTAS',
+                data: [],
+                fill: false,
+                borderColor: 'rgb(255,0,255)',
+                backgroundColor: 'rgb(148,0,211)',
+                tension: 0.1,
             },
-        },
-    });
-
-    const ctx2 = document.getElementById("myChart2");
-
-
-new Chart(ctx2, {
-    type: "doughnut",
-    data: {
-        labels: ["",
-        ],
-        datasets: [
             {
-                label: "Kelly ou Yorkie",
-                data: [
-                    900, 900, 850, 900, 900, 850, 900, 900, 900, 850, 900, 850, 900,
-                    900, 900, 850, 900, 900, 900, 900, 850, 900, 900, 900,
-                ],
-                borderWidth: 1,
-                backgroundColor: "rgb(75,0,130)",
-                borderColor: "rgb(75,0,130)",
+                label: 'ACERTOU!',
+                data: [],
+                fill: false,
+                borderColor: 'rgb(0,250,154)',
+                backgroundColor: 'rgb(128,0,128)',
+                tension: 0.1
             },
-        ],
-    },
-});
+            {
+                label: 'GAME OVER',
+                data: [],
+                fill: false,
+                borderColor: 'rgb(106,90,205)',
+                backgroundColor: 'rgb(106,90,205)',
+                tension: 0.1
+            }]
+        };
+
+        // Inserindo valores recebidos em estrutura para plotar o gráfico
+        for (i = 0; i < resposta.length; i++) {
+            var registro = resposta[i];
+            labels.push(registro.usuarios);
+            dados.datasets[0].data.push(registro.usuarios);
+            dados.datasets[1].data.push(registro.acertaram);
+            dados.datasets[2].data.push(registro.erraram);
+
+        }
+
+
+        // Criando estrutura para plotar gráfico - config
+        const config = {
+            type: 'bar',
+            data: dados,
+        };
+
+        // Adicionando gráfico criado em div na tela
+        let myChart = new Chart(
+            document.getElementById(`myChart1`),
+            config
+        );
+
+        setTimeout(() => atualizarGrafico(idAquario, dados, myChart), 2000);
+    }
 
 </script>
