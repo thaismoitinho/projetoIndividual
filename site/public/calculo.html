@@ -40,10 +40,18 @@
                     <button onclick="limparSessao()" class="logOut"> SAIR</button>
                 </div>
             </div>
-            <div class="conteudo"></div>
+            
+            <div class="containerCalculo">
+                <h1 class="escolha">Escolha um numero de 1 a 10 e descubra qual personagens você seria</h1>
+                <input id="numero" min="1" max="10">
+                <button class="gerarNumeros" onclick="gerarNumero()">Descubra</button>
+                <div id="resultado"></div>
+                </div>
         </div>
-
+        
     </div>
+
+
 
 </body>
 </html>
@@ -63,6 +71,23 @@
     else {
         div_mostrarImagem.innerHTML = mostrarImagem[1]
     }
+    }
+
+    var imagens = [
+      `<img src="assets/kelly_icon.jpeg" width="500px" height="500px">`,
+      `<img src="assets/kelly_icon.jpeg" width="500px" height="500px">`
+    ];
+
+    function gerarNumero() {
+      var numeroDigitado = parseInt(document.getElementById("numero").value);
+      var numeroGerado = numeroDigitado + Math.floor(Math.random() * 10) + 1;
+
+      var resultadoDiv = document.getElementById("resultado");
+      resultadoDiv.innerHTML = "";
+
+      var imagem = document.createElement("img");
+      imagem.src = imagens[numeroGerado % 2];
+      resultadoDiv.appendChild(imagem);
     }
 
     

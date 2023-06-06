@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Poppins:wght@300&display=swap');
+
+
+.containerCalculo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 700px;
+    height: 500px;
+    align-items: center;
+    margin-left: 180px;
+}
+
+.escolha {
+    display: flex;
+    font-size: 25px;
+}
+
+#numero {
+    display: flex;
+    width: 90px;
+    height: 30px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.gerarNumeros {
+    font-family: 'Bruno Ace', cursive; 
+    font-size: 1.2rem;
+    color: white;
+    width: 21.3vw;
+    height: 6vh;
+    margin-top: 10px;
+    border-radius: 25px;
+    border-style: none;
+    background-color: #E41076;
+    cursor: pointer;
+}
+
+#resultado {
+    display: flex;
+}
