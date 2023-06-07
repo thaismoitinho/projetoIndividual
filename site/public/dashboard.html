@@ -104,7 +104,7 @@
         let dados = {
             labels: labels,
             datasets: [{
-                label: 'RESPOSTAS',
+                label: 'Total respostas',
                 data: [],
                 fill: false,
                 borderColor: 'rgb(255,0,255)',
@@ -112,7 +112,7 @@
                 tension: 0.1,
             },
             {
-                label: 'ACERTOU!',
+                label: '0 pontos',
                 data: [],
                 fill: false,
                 borderColor: 'rgb(0,250,154)',
@@ -120,13 +120,45 @@
                 tension: 0.1
             },
             {
-                label: 'GAME OVER',
+                label: '1 ponto',
                 data: [],
                 fill: false,
                 borderColor: 'rgb(106,90,205)',
                 backgroundColor: 'rgb(106,90,205)',
                 tension: 0.1
-            }]
+            }, {
+                label: '2 pontos',
+                data: [],
+                fill: false,
+                borderColor: 'rgb(106,90,205)',
+                backgroundColor: 'rgb(106,90,205)',
+                tension: 0.1
+            },
+            {
+                label: '3 pontos',
+                data: [],
+                fill: false,
+                borderColor: 'rgb(106,90,205)',
+                backgroundColor: 'rgb(106,90,205)',
+                tension: 0.1
+            },
+            {
+                label: '4 pontos',
+                data: [],
+                fill: false,
+                borderColor: 'rgb(106,90,205)',
+                backgroundColor: 'rgb(106,90,205)',
+                tension: 0.1
+            },
+            {
+                label: 'WINNERS!',
+                data: [],
+                fill: false,
+                borderColor: '#FF0F7B',
+                backgroundColor: '#FF0F7B',
+                tension: 0.1
+            },
+            ]
         };
 
         // Inserindo valores recebidos em estrutura para plotar o gráfico
@@ -134,8 +166,12 @@
             var registro = resposta[i];
             labels.push(registro.usuarios);
             dados.datasets[0].data.push(registro.usuarios);
-            dados.datasets[1].data.push(registro.acertaram);
-            dados.datasets[2].data.push(registro.erraram);
+            dados.datasets[1].data.push(registro.pontoZero);
+            dados.datasets[2].data.push(registro.pontoUm);
+            dados.datasets[3].data.push(registro.pontoDois);
+            dados.datasets[4].data.push(registro.pontoTres);
+            dados.datasets[5].data.push(registro.pontoQuatro);
+            dados.datasets[6].data.push(registro.pontoCinco);
 
         }
 

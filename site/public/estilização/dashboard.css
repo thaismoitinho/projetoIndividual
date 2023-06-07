@@ -1,11 +1,11 @@
 .chart1 {
     display: flex;
     justify-content: center;
-    width: 700px;
-    height: 700px;
+    width: 900px;
+    height: 500px;
     margin-top: 50px;
-    margin-left: 130px;
-    background: linear-gradient(100deg, #1b022a, transparent);  
-    border-radius: 10px;  
+    margin-left: 80px;
+    background-color: aliceblue ;
+    border-radius: 5px;  
 }
 
