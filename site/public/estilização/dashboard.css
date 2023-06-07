@@ -3,9 +3,15 @@
     justify-content: center;
     width: 900px;
     height: 500px;
-    margin-top: 50px;
-    margin-left: 80px;
-    background-color: aliceblue ;
-    border-radius: 5px;  
+    margin-top: 90px;
+    margin-left: 180px;
+    background-color: rgb(255, 255, 255) ;
+    border-radius: 15px;  
 }
 
+.tituloDash {
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+    margin-left: 90px;
+}

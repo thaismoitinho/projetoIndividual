@@ -40,6 +40,8 @@
                 </div>
             </div>
             <div class="conteudoDashboard">
+
+                <h1 class="tituloDash">GRÁFICO - SAN JUNIPERO</h1>
                 <canvas class="chart1" id="myChart1"></canvas>
             </div>
         </div>
@@ -90,7 +92,6 @@
     }
 
 
-
     function plotarGrafico(resposta, idAquario) {
 
         console.log('iniciando plotagem do gráfico...');
@@ -104,46 +105,46 @@
         let dados = {
             labels: labels,
             datasets: [{
-                label: 'Total respostas',
+                label: 'TOTAL RESPOSTAS',
                 data: [],
                 fill: false,
-                borderColor: 'rgb(255,0,255)',
-                backgroundColor: 'rgb(148,0,211)',
+                borderColor: 'rgb(123,104,238)',
+                backgroundColor: 'rgb(123,104,238)',
                 tension: 0.1,
             },
             {
-                label: '0 pontos',
+                label: '0 PONTOS',
                 data: [],
                 fill: false,
-                borderColor: 'rgb(0,250,154)',
-                backgroundColor: 'rgb(128,0,128)',
+                borderColor: 'rgb(255,105,180)',
+                backgroundColor: 'rgb(255,105,180)',
                 tension: 0.1
             },
             {
-                label: '1 ponto',
+                label: '1 PONTOS',
                 data: [],
                 fill: false,
-                borderColor: 'rgb(106,90,205)',
-                backgroundColor: 'rgb(106,90,205)',
+                borderColor: 'rgb(255,20,147)',
+                backgroundColor: 'rgb(255,20,147)',
                 tension: 0.1
             }, {
-                label: '2 pontos',
+                label: '2 PONTOS',
                 data: [],
                 fill: false,
-                borderColor: 'rgb(106,90,205)',
-                backgroundColor: 'rgb(106,90,205)',
+                borderColor: 'rgb(255,0,255)',
+                backgroundColor: 'rgb(255,0,255)',
                 tension: 0.1
             },
             {
-                label: '3 pontos',
+                label: '3 PONTOS',
                 data: [],
                 fill: false,
-                borderColor: 'rgb(106,90,205)',
-                backgroundColor: 'rgb(106,90,205)',
+                borderColor: 'rgb(148,0,211)',
+                backgroundColor: 'rgb(148,0,211)',
                 tension: 0.1
             },
             {
-                label: '4 pontos',
+                label: '4 PONTOS',
                 data: [],
                 fill: false,
                 borderColor: 'rgb(106,90,205)',
@@ -171,7 +172,7 @@
             dados.datasets[3].data.push(registro.pontoDois);
             dados.datasets[4].data.push(registro.pontoTres);
             dados.datasets[5].data.push(registro.pontoQuatro);
-            dados.datasets[6].data.push(registro.pontoCinco);
+            dados.datasets[6].data.push(registro.pontoCinco)
 
         }
 

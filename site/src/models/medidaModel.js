@@ -51,7 +51,7 @@ FROM
   } else if (process.env.AMBIENTE_PROCESSO == "desenvolvimento") {
     instrucaoSql = `
         SELECT 
-        COUNT(*) AS usuarios,
+      COUNT(*) AS usuarios,
       SUM(CASE WHEN pontuacao = 0 THEN 1 ELSE 0 END) AS pontoZero,
       SUM(CASE WHEN pontuacao = 1 THEN 1 ELSE 0 END) AS pontoUm,
       SUM(CASE WHEN pontuacao = 2 THEN 1 ELSE 0 END) AS pontoDois,

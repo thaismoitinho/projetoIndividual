@@ -13,10 +13,10 @@ body {
     background: linear-gradient(100deg, #1b022a, transparent);
     padding: 10px;
     border-radius: 10px;
-    width: 800px;
+    width: 710px;
     height: 500px;
-    margin-top: 60px;
-    margin-left: 210px
+    margin-top: 90px;
+    margin-left: 210px;
 
 }
 
@@ -66,4 +66,9 @@ h3 {
     width: 100px;
     height: 100px;
     /* AQUI VAI FICAR TODAS AS ALTERAÇÕES DO GRAFICO */
+}
+
+.titulo {
+    display: flex;
+    font-size: 30px;
 }

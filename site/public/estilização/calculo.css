@@ -3,17 +3,24 @@
 
 .containerCalculo {
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 700px;
-    height: 500px;
     align-items: center;
-    margin-left: 180px;
+    padding: 10px;
+    border-radius: 10px;
+    width: 710px;
+    height: 600px;
+    margin-top: 90px;
+    margin-left: 210px;
+    background: linear-gradient(100deg, #1b022a, transparent);
+    flex-direction: column;
+    margin-top: 90px;
+
 }
 
 .escolha {
     display: flex;
-    font-size: 25px;
+    font-size: 20px;
+    margin-top: 90px;
+    text-align: center;
 }
 
 #numero {
@@ -22,19 +29,22 @@
     height: 30px;
     font-size: 30px;
     text-align: center;
+    margin-top: 20px;
+    border-radius: 10px;
 }
 
 .gerarNumeros {
     font-family: 'Bruno Ace', cursive; 
-    font-size: 1.2rem;
+    font-size: 15px;
     color: white;
-    width: 21.3vw;
+    width: 200px;
     height: 6vh;
-    margin-top: 10px;
+    margin-top: 15px;
     border-radius: 25px;
     border-style: none;
-    background-color: #E41076;
+    background-color: #c80373;
     cursor: pointer;
+    
 }
 
 #resultado {
