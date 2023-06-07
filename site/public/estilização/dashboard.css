@@ -1,3 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Poppins:wght@300&display=swap');
+/* font-family:'Bruno Ace', cursive;
+   font-family:'Poppins', sans-serif; */
+
+
+body {
+    margin: 0 ;
+    padding: 0;
+    background-color: black;
+    font-family: 'Bruno Ace', cursive;
+}
+
+.containerUsuario {
+    background: linear-gradient(90deg, rgb(135, 18, 108) 20%, rgba(77,39, 182, 1) 100%);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.logoSite img {
+    width: 69px;
+    height: 60px;
+    margin-left: 2rem;
+}
+
+.navbar {
+    display: flex;
+    background-color: #100227;
+    width: 100%;
+    height: 60px;
+    position: absolute;
+}
+
+.logOut {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    background-color: transparent;
+    border-style: none;
+    align-items: center;
+    font-family: 'Bruno Ace', cursive;
+    cursor: pointer;
+}
+
+.painel {
+    width: 260px;
+    height: 693px;
+    background-color: #16032b;
+    padding-top: 120px;
+    
+}
+.botoes {
+    color: white;
+    width: 100%;
+    height: 25px;
+    margin-top: 50px;
+}
+
+.botoes button {
+    margin-top: 0.5px;
+    width: 100%;
+    height: 70px;
+    color: white;
+    font-size: 16px;
+    font-family: 'Bruno Ace', cursive;
+}
+
+.conteudoPainel {
+    display: flex;
+}
+
+
 .chart1 {
     display: flex;
     justify-content: center;
