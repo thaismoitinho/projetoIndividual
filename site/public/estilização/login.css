@@ -4,64 +4,67 @@
 
 
 body {
-    margin: 0 ;
+    margin: 0;
     padding: 0;
-    font-family:'Bruno Ace', cursive;
+    font-family: 'Bruno Ace', cursive;
 }
 
 .containerLogin {
-    display: flex; 
+    display: flex;
     background-image: url(../assets/fundo_cadelog.png);
     width: 100%;
     height: 100vh;
     background-size: cover;
-    background-repeat: no-repeat; /* comando para duplicar as imagens ou conteudos */
+    background-repeat: no-repeat;
     justify-content: center;
     align-items: center;
     color: white;
-    
-   
+
+
 }
 
 .formulario {
     display: flex;
-    flex-direction: column; /* para deixar elementos na coluna */
+    flex-direction: column;
     width: 19rem;
-    margin-right: -1.5rem;
     margin-top: 1rem;
+    align-items: center;
 }
 
 .fraseBemVindo {
-    font-size: 25px;
+    font-size: 20px;
+    width: 360px;
+    text-align: center;
 }
 
 .inputs {
-    font-size: 18px;
-   
+    font-size: 14px;
+    margin-top: 15px;
 }
 
 .inputs input {
     width: 20vw;
-    height: 2.5vh;
-    border-radius: 15px;
+    height: 15px;
+    border-radius: 19px;
     border-style: none;
-    font-size: 14px;
-    font-family:'Poppins', sans-serif;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    ;
     padding: 8px;
     margin-top: 5px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .botaoLogin {
     font-family: 'Bruno Ace', cursive; 
-    font-size: 1rem;
+    font-size: 15px;
     color: white;
-    width: 21.3vw;
+    width: 200px;
     height: 6vh;
-    margin-top: 7px;
+    margin-top: 10px;
     border-radius: 25px;
     border-style: none;
-    background-color: #E41076;
+    background-color: #c80373;
     cursor: pointer;
 
 }
@@ -69,11 +72,10 @@ body {
 .semConta {
     color: white;
     margin-top: 20px;
-    width: 100%;
+    font-size: 15px;
 }
 
 .semConta a {
     color: #E41076;
     text-decoration: none;
 }
-

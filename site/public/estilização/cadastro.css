@@ -28,15 +28,16 @@ body {
 
 .formulario {
     display: flex;
-    flex-direction: column; /* para deixar elementos na coluna */
-    width: 20rem;
-
+    flex-direction: column;
+    width: 19rem;
+    margin-top: 1rem;
     align-items: center;
 }
 
 .fraseBemVindo {
-    font-size: 25px;
-    width: 323px;
+    font-size: 20px;
+    width: 300px;
+    text-align: center;
 }
 
 .inputs {
