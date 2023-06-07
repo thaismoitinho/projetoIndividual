@@ -38,8 +38,8 @@ nav {
 } 
 
 .logoSite img {
-    width: 120px;
-    height: 120px;
+    width: 139px;
+    height: 133px;
     margin-left: 25%;
     
 }
@@ -138,7 +138,8 @@ nav {
     display: flex;
     justify-content:left;
     margin-top: 15rem;
-    margin-left: 5rem;
+    margin-left: 15rem;
+    border-radius: 5px;
 }
 
 .textoSanJunipero {
@@ -175,7 +176,9 @@ nav {
     display: flex;
     justify-content: center;
     margin-top: 15rem;
-    margin-left: 5rem;
+    margin-left: 15rem;
+    border-radius: 5px;
+
 }
 
 .textoPersonagens {
@@ -209,10 +212,12 @@ nav {
     width: 400px;
     height: 450px;
     background: no-repeat;
-    background-image: url(../assets/tumblr_b94d99276aace41f4d2f5a7216ac9045_d6c45ca6_540.webp);
+    background-image: url(../assets/../assets/servidores_sanjunipero.gif);
     justify-content: center;
-    margin-top: 15rem;
-    margin-left: 5rem;
+    margin-top: 17.5rem;
+    margin-left: 15rem;
+    border-radius: 5px;
+
 }
 
 .textoIA {
