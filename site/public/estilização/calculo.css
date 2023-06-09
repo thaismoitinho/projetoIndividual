@@ -125,3 +125,10 @@ body {
 #resultado {
     display: flex;
 }
+
+#resultado img{
+    width: 300px;
+    height: 300px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
