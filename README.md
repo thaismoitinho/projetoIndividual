@@ -2,7 +2,10 @@
 Este é um projeto individual de primeiro semestre da faculdade São Paulo Tech School, no qual o tema escolhi por mim foi o seriado criado pela Netflix BLACK MIRROR, no qual o episodio referenciado é SAN JUNIPERO.
 O objetivo do projeto é propor uma interface visual e imersiva sobre o episodio, com informações interessantes sobre os personagens, curiosidades do universo e além de interação por meio de um quiz e uma dashboard interativa.
 
-<br> 
+
+
+
+
 <img src="https://user-images.githubusercontent.com/46379117/192358781-9ca879e4-e55e-4d0d-b876-f9a4a2ed9ae8.png" width="600px">
 
 _Web Data Visualization = Visualização de Dados na Web_
