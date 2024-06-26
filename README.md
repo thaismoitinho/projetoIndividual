@@ -1,10 +1,49 @@
-<h1> SAN JUNIPERO PROJECT </h1>
-Este é um projeto individual de primeiro semestre da faculdade São Paulo Tech School, no qual o tema escolhi por mim foi o seriado criado pela Netflix BLACK MIRROR, no qual o episodio referenciado é SAN JUNIPERO.
-O objetivo do projeto é propor uma interface visual e imersiva sobre o episodio, com informações interessantes sobre os personagens, curiosidades do universo e além de interação por meio de um quiz e uma dashboard interativa.
+# PROJETO SAN JUNIPERO
 
+Este é um projeto individual desenvolvido no primeiro semestre da faculdade São Paulo Tech School. O tema escolhido foi o episódio "San Junipero" da série BLACK MIRROR, criada pela Netflix.
 
-<hr>
+## Objetivo
 
+O objetivo deste projeto é criar uma interface visual e imersiva que explore o universo do episódio "San Junipero". Isso inclui:
+
+- Apresentar informações detalhadas sobre os personagens principais.
+- Compartilhar curiosidades e detalhes do universo de "San Junipero".
+- Fornecer interatividade através de um quiz com curiosidades sobre o episódio.
+- Desenvolver uma dashboard que exibe estatísticas, como quantos usuários acertaram todas ou a maioria das questões do quiz.
+- Implementar um sistema usando `Math.random()` que sorteia qual personagem do episódio o usuário seria.
+
+## Tecnologias Utilizadas
+
+- HTML: Utilizado para estruturar a interface do projeto.
+- CSS: Utilizado para estilizar os elementos e proporcionar uma experiência visual agradável.
+- JavaScript: Utilizado para adicionar interatividade à página, incluindo o quiz e o sorteio de personagem.
+- Banco de Dados MySQL: Utilizado para armazenar e gerenciar dados relevantes para o projeto.
+
+## Como Usar
+
+1. Clone este repositório em sua máquina local.
+   
+2. Configure o ambiente e o banco de dados conforme descrito no arquivo `site/src/database/script-tabelas.sql`.
+
+3. Personalize as credenciais do banco de dados no arquivo `site/src/database/config.js`.
+
+4. Navegue até o diretório `site` e instale as dependências usando o comando:
+
+5. Inicie o projeto usando o comando:
+
+6. Acesse o projeto em seu navegador seguindo o caminho indicado no terminal.
+
+7. Explore as informações, participe do quiz e descubra qual personagem você seria!
+
+## Contribuindo
+
+Contribuições são bem-vindas! Sinta-se à vontade para enviar pull requests com melhorias, correções ou novas funcionalidades.
+
+## Licença
+
+Este projeto está licenciado sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
+
+---
 
 <img src="https://user-images.githubusercontent.com/46379117/192358781-9ca879e4-e55e-4d0d-b876-f9a4a2ed9ae8.png" width="600px">
 
@@ -108,3 +147,7 @@ Abaixo, uma figura que ajuda a compreender o caminho percorrido para, por exempl
 
 [1] https://datatracker.ietf.org/doc/html/rfc2396  
 [2] https://datatracker.ietf.org/doc/html/rfc7231
+
+<div align="center">
+<sub>Desenvolvido por Thais Moitinho</sub>
+</div>
